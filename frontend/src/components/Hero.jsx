@@ -17,7 +17,7 @@ const Hero = () => {
           return 1;
         }
       });
-    }, 3000);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
@@ -29,9 +29,6 @@ const Hero = () => {
           style={{
             display: currentImage === 1 ? "block" : "none",
             zIndex: currentImage === 1 ? "2" : "0",
-            //   backgroundImage: `url(${slider1})`,
-            //   backgroundSize: `cover`,
-            //   backgroundRepeat: `no-repeat`,
           }}
         >
           <img
@@ -45,9 +42,6 @@ const Hero = () => {
           style={{
             display: currentImage === 2 ? "block" : "none",
             zIndex: currentImage === 1 ? "2" : "0",
-            // backgroundImage: `url(${slider2})`,
-            // backgroundSize: `cover`,
-            // backgroundRepeat: `no-repeat`,
           }}
         >
           <img
@@ -57,14 +51,18 @@ const Hero = () => {
           />
         </div>
         <div
-          className="w-full h-screen"
+          className="w-[414px] h-screen left-[414px] abosolute overflow-hidden"
           style={{
             display: currentImage === 3 ? "block" : "none",
-            backgroundImage: `url(${slider3})`,
-            backgroundSize: `cover`,
-            backgroundRepeat: `no-repeat`,
+            zIndex: currentImage === 1 ? "2" : "0",
           }}
-        ></div>
+        >
+          <img
+            src={slider3}
+            className="absolute left-[-508.605px] top-[0px] z-[-1] max-w-none h-[896px] w-[1431.21px] md:left-0"
+            alt=""
+          />
+        </div>
       </div>
     </>
   );
