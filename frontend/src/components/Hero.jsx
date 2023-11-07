@@ -41,10 +41,15 @@ const Hero = () => {
             className="absolute left-[-508.605px] top-[0px] z-[-1] max-w-none h-[896px] w-[1431.21px] md:left-0"
             alt=""
           />
-          <div className="flex justify-center items-center font-montserrat text-white px-5 text-center">
-            <p className="text-5xl font-bold mt-[350px]">
+          <div className="flex justify-center items-center text-white px-3 text-center">
+            <div>
+              <p className="text-5xl font-bold mt-[350px] font-montez">
               Cutting-Edge Styles for Modern Gentlemen
             </p>
+            <button className="mt-10">
+              Get Started
+            </button>
+            </div>
           </div>
         </div>
         <div
@@ -59,10 +64,15 @@ const Hero = () => {
             className="absolute left-[-508.605px] top-[0px] z-[-1] max-w-none h-[896px] w-[1431.21px] md:left-0"
             alt=""
           />
-          <div className="flex justify-center items-center font-montserrat text-white px-5 text-center">
-            <p className="text-5xl font-bold mt-[350px]">
+          <div className="flex justify-center items-center text-white px-3 text-center">
+            <div>
+              <p className="text-5xl font-bold mt-[350px] font-montez">
               Your Signature Style, Our Expertise
             </p>
+            <button className="mt-10">
+              Get Started
+            </button>
+            </div>
           </div>
         </div>
         <div
@@ -77,10 +87,15 @@ const Hero = () => {
             className="absolute left-[-508.605px] top-[0px] z-[-1] max-w-none h-[896px] w-[1431.21px] md:left-0"
             alt=""
           />
-          <div className="flex justify-center items-center font-montserrat text-white px-5 text-center">
-            <p className="text-5xl font-bold mt-[350px]">
+          <div className="flex justify-center text-white px-3 text-center">
+            <div>
+              <p className="text-5xl font-bold mt-[350px] font-montez">
               Unleash Your Inner Swagger
             </p>
+            <button className="mt-10">
+              Get Started
+            </button>
+            </div>
           </div>
         </div>
       </div>
