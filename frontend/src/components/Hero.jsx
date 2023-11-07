@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import slider1 from "../images/slider01.jpg";
-import slider2 from "../images/slider02.jpg";
+import slider2 from "../images/slider01.jpg";
+import slider1 from "../images/slider02.jpg";
 import slider3 from "../images/slider03.jpg";
 import '../styles/hero.css'
 
@@ -41,8 +41,10 @@ const Hero = () => {
             className="absolute left-[-508.605px] top-[0px] z-[-1] max-w-none h-[896px] w-[1431.21px] md:left-0"
             alt=""
           />
-          <div className="flex justify-center items-center font-montez text-white px-5 text-center">
-            <p className="text-5xl font-bold mt-[350px]">The Perfect Barber Shop</p>
+          <div className="flex justify-center items-center font-montserrat text-white px-5 text-center">
+            <p className="text-5xl font-bold mt-[350px]">
+              Cutting-Edge Styles for Modern Gentlemen
+            </p>
           </div>
         </div>
         <div
@@ -57,8 +59,10 @@ const Hero = () => {
             className="absolute left-[-508.605px] top-[0px] z-[-1] max-w-none h-[896px] w-[1431.21px] md:left-0"
             alt=""
           />
-          <div className="flex justify-center items-center font-montez text-white px-5 text-center">
-            <p className="text-5xl font-bold mt-[350px]">The Perfect Barber Shop</p>
+          <div className="flex justify-center items-center font-montserrat text-white px-5 text-center">
+            <p className="text-5xl font-bold mt-[350px]">
+              Your Signature Style, Our Expertise
+            </p>
           </div>
         </div>
         <div
@@ -73,8 +77,10 @@ const Hero = () => {
             className="absolute left-[-508.605px] top-[0px] z-[-1] max-w-none h-[896px] w-[1431.21px] md:left-0"
             alt=""
           />
-          <div className="flex justify-center items-center font-montez text-white px-5 text-center">
-            <p className="text-5xl font-bold mt-[350px]">The Perfect Barber Shop</p>
+          <div className="flex justify-center items-center font-montserrat text-white px-5 text-center">
+            <p className="text-5xl font-bold mt-[350px]">
+              Unleash Your Inner Swagger
+            </p>
           </div>
         </div>
       </div>
