@@ -1,0 +1,10 @@
+/* FILEPATH: /C:/Users/Owolabi/Documents/Project/Barbing Solution/frontend/src/styles/hero.css */
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}

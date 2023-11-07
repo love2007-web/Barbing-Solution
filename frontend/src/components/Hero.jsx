@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import slider1 from "../images/slider01.jpg";
 import slider2 from "../images/slider02.jpg";
 import slider3 from "../images/slider03.jpg";
+import '../styles/hero.css'
 
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState(1);
@@ -21,6 +22,10 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const handleImageChange = (imageNumber) => {
+    setCurrentImage(imageNumber);
+  };
+
   return (
     <>
       <div className="relative overflow-hidden">
@@ -36,12 +41,15 @@ const Hero = () => {
             className="absolute left-[-508.605px] top-[0px] z-[-1] max-w-none h-[896px] w-[1431.21px] md:left-0"
             alt=""
           />
+          <div className="flex justify-center items-center font-montez text-white px-5 text-center">
+            <p className="text-5xl font-bold mt-[350px]">The Perfect Barber Shop</p>
+          </div>
         </div>
         <div
           className="w-[414px] h-screen left-[414px] abosolute overflow-hidden"
           style={{
             display: currentImage === 2 ? "block" : "none",
-            zIndex: currentImage === 1 ? "2" : "0",
+            zIndex: currentImage === 2 ? "2" : "0",
           }}
         >
           <img
@@ -49,12 +57,15 @@ const Hero = () => {
             className="absolute left-[-508.605px] top-[0px] z-[-1] max-w-none h-[896px] w-[1431.21px] md:left-0"
             alt=""
           />
+          <div className="flex justify-center items-center font-montez text-white px-5 text-center">
+            <p className="text-5xl font-bold mt-[350px]">The Perfect Barber Shop</p>
+          </div>
         </div>
         <div
           className="w-[414px] h-screen left-[414px] abosolute overflow-hidden"
           style={{
             display: currentImage === 3 ? "block" : "none",
-            zIndex: currentImage === 1 ? "2" : "0",
+            zIndex: currentImage === 3 ? "2" : "0",
           }}
         >
           <img
@@ -62,7 +73,30 @@ const Hero = () => {
             className="absolute left-[-508.605px] top-[0px] z-[-1] max-w-none h-[896px] w-[1431.21px] md:left-0"
             alt=""
           />
+          <div className="flex justify-center items-center font-montez text-white px-5 text-center">
+            <p className="text-5xl font-bold mt-[350px]">The Perfect Barber Shop</p>
+          </div>
         </div>
+      </div>
+      <div className="flex justify-center mt-4">
+        <button
+          className={`mx-2 rounded-full w-3 h-3 ${
+            currentImage === 1 ? "bg-black" : "bg-gray-400"
+          }`}
+          onClick={() => handleImageChange(1)}
+        ></button>
+        <button
+          className={`mx-2 rounded-full w-3 h-3 ${
+            currentImage === 2 ? "bg-black" : "bg-gray-400"
+          }`}
+          onClick={() => handleImageChange(2)}
+        ></button>
+        <button
+          className={`mx-2 rounded-full w-3 h-3 ${
+            currentImage === 3 ? "bg-black" : "bg-gray-400"
+          }`}
+          onClick={() => handleImageChange(3)}
+        ></button>
       </div>
     </>
   );
