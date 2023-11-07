@@ -30,7 +30,7 @@ const Hero = () => {
     <>
       <div className="relative overflow-hidden">
         <div
-          className="w-[414px] h-screen left-[414px] abosolute overflow-hidden"
+          className="w-[414px] h-screen left-[414px] abosolute items-center overflow-hidden"
           style={{
             display: currentImage === 1 ? "block" : "none",
             zIndex: currentImage === 1 ? "2" : "0",
@@ -41,9 +41,9 @@ const Hero = () => {
             className="absolute left-[-508.605px] top-[0px] z-[-1] max-w-none h-[896px] w-[1431.21px] md:left-0"
             alt=""
           />
-          <div className="flex justify-center items-center text-white px-3 text-center">
+          <div className="flex justify-center items-center absolute top-1/3 text-white px-3 text-center">
             <div>
-              <p className="text-5xl font-bold mt-[350px] font-montez">
+              <p className="text-5xl font-bold mt-[] font-montez">
               Cutting-Edge Styles for Modern Gentlemen
             </p>
             <button className="mt-10">
@@ -64,9 +64,9 @@ const Hero = () => {
             className="absolute left-[-508.605px] top-[0px] z-[-1] max-w-none h-[896px] w-[1431.21px] md:left-0"
             alt=""
           />
-          <div className="flex justify-center items-center text-white px-3 text-center">
+          <div className="flex justify-center items-center absolute top-1/3 text-white px-3 text-center">
             <div>
-              <p className="text-5xl font-bold mt-[350px] font-montez">
+              <p className="text-5xl font-bold mt-[] font-montez">
               Your Signature Style, Our Expertise
             </p>
             <button className="mt-10">
@@ -87,9 +87,9 @@ const Hero = () => {
             className="absolute left-[-508.605px] top-[0px] z-[-1] max-w-none h-[896px] w-[1431.21px] md:left-0"
             alt=""
           />
-          <div className="flex justify-center text-white px-3 text-center">
+          <div className="flex justify-center text-white absolute top-1/3 px-3 text-center">
             <div>
-              <p className="text-5xl font-bold mt-[350px] font-montez">
+              <p className="text-5xl font-bold mt-[] font-montez">
               Unleash Your Inner Swagger
             </p>
             <button className="mt-10">
