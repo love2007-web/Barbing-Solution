@@ -28,7 +28,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden h-screen">
         <div
           className="w-[414px] h-screen left-[414px] abosolute items-center overflow-hidden"
           style={{
@@ -38,7 +38,7 @@ const Hero = () => {
         >
           <img
             src={slider1}
-            className="absolute left-[-508.605px] top-[0px] z-[-1] max-w-none h-[896px] w-[1431.21px] md:left-0"
+            className="absolute left-[-508.605px] top-[0px] z-[-1] max-w-none h-screen w-[1431.21px] md:left-0"
             alt=""
           />
           <div className="flex justify-center items-center absolute top-1/3 text-white px-1 text-center">
@@ -61,7 +61,7 @@ const Hero = () => {
         >
           <img
             src={slider2}
-            className="absolute left-[-508.605px] top-[0px] z-[-1] max-w-none h-[896px] w-[1431.21px] md:left-0"
+            className="absolute left-[-508.605px] top-[0px] z-[-1] max-w-none h-screen w-[1431.21px] md:left-0"
             alt=""
           />
           <div className="flex justify-center items-center absolute top-[40%] text-white px-1 text-center">
@@ -84,7 +84,7 @@ const Hero = () => {
         >
           <img
             src={slider3}
-            className="absolute left-[-508.605px] top-[0px] z-[-1] max-w-none h-[896px] w-[1431.21px] md:left-0"
+            className="absolute left-[-508.605px] top-[0px] z-[-1] max-w-none h-screen w-[1431.21px] md:left-0"
             alt=""
           />
           <div className="flex justify-center text-white absolute top-1/3 px-1 text-center">
