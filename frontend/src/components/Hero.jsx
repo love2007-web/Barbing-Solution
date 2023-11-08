@@ -44,11 +44,11 @@ const Hero = () => {
           <div className="flex justify-center items-center absolute top-1/3 text-white px-1 text-center">
             <div>
               <p className="text-5xl font-bold mt-[] font-montez">
-              Cutting-Edge Styles for Modern Gentlemen
-            </p>
-            <button className="mt-10">
-              Get Started
-            </button>
+                Cutting-Edge Styles for Modern Gentlemen
+              </p>
+              <button className="mt-10 border border-white px-4 py-2 pointer tracking-wider">
+                Get Started
+              </button>
             </div>
           </div>
         </div>
@@ -67,11 +67,11 @@ const Hero = () => {
           <div className="flex justify-center items-center absolute top-[40%] text-white px-1 text-center">
             <div>
               <p className="text-5xl font-bold mt-[] font-montez">
-              Your Signature Style, Our Expertise
-            </p>
-            <button className="mt-10">
-              Get Started
-            </button>
+                Your Signature Style, Our Expertise
+              </p>
+              <button className="mt-10 border border-white px-4 py-2 pointer tracking-wider">
+                Get Started
+              </button>
             </div>
           </div>
         </div>
@@ -90,34 +90,36 @@ const Hero = () => {
           <div className="flex justify-center text-white absolute top-1/3 px-1 text-center">
             <div>
               <p className="text-5xl font-bold mt-[] font-montez">
-              Unleash Your Inner Swagger
-            </p>
-            <button className="mt-10">
-              Get Started
-            </button>
+                Unleash Your Inner Swagger
+              </p>
+              <button className="mt-10 border border-white px-4 py-2 pointer tracking-wider">
+                Get Started
+              </button>
             </div>
           </div>
         </div>
-      </div>
-      <div className="flex justify-center mt-4">
-        <button
-          className={`mx-2 rounded-full border-2 border-black w-3 h-3 ${
-            currentImage === 1 ? "bg-black" : "bg-transparent"
-          }`}
-          onClick={() => handleImageChange(1)}
-        ></button>
-        <button
-          className={`mx-2 rounded-full border-2 border-black w-3 h-3 ${
-            currentImage === 2 ? "bg-black" : "bg-transparent"
-          }`}
-          onClick={() => handleImageChange(2)}
-        ></button>
-        <button
-          className={`mx-2 rounded-full border-2 border-black w-3 h-3 ${
-            currentImage === 3 ? "bg-black" : "bg-transparent"
-          }`}
-          onClick={() => handleImageChange(3)}
-        ></button>
+        <div className="flex justify-center">
+          <div className="flex justify-center mt-4 absolute bottom-3">
+            <button
+              className={`mx-2 rounded-full border-2 border-white w-3 h-3 ${
+                currentImage === 1 ? "bg-white" : "bg-transparent"
+              }`}
+              onClick={() => handleImageChange(1)}
+            ></button>
+            <button
+              className={`mx-2 rounded-full border-2 border-white w-3 h-3 ${
+                currentImage === 2 ? "bg-white" : "bg-transparent"
+              }`}
+              onClick={() => handleImageChange(2)}
+            ></button>
+            <button
+              className={`mx-2 rounded-full border-2 border-white w-3 h-3 ${
+                currentImage === 3 ? "bg-white" : "bg-transparent"
+              }`}
+              onClick={() => handleImageChange(3)}
+            ></button>
+          </div>
+        </div>
       </div>
     </>
   );
